@@ -3,12 +3,13 @@ import { twMerge } from "tailwind-merge";
 type Props = {
     styles?: string,
     type: string,
+    placeholderName: string
 }
 
-function Input({ styles, type }: Props) {
+function Input({ styles, type, placeholderName }: Props) {
     return (
-        <input type={type} className={twMerge(
-            styles
+        <input type={type} placeholder={placeholderName} className={twMerge(
+            'h-7 border-gray-500',styles
         )} />
     );
 }
