@@ -9,7 +9,7 @@ type Props = {
 function Input({ styles, type, placeholderName }: Props) {
     return (
         <input type={type} placeholder={placeholderName} className={twMerge(
-            'h-7 border-gray-500',styles
+            'h-7',styles
         )} />
     );
 }
